@@ -1,0 +1,50 @@
+[
+  {
+    "Pin": "A0",
+    "Name": "GND",
+    "Unit": "V",
+    "Scale": 1000,
+    "Offset": -1,
+    "Enable": true
+  },
+  {
+    "Pin": "A1",
+    "Name": "GND",
+    "Unit": "V",
+    "Scale": 1000,
+    "Offset": 0,
+    "Enable": true
+  },
+  {
+    "Pin": "A2",
+    "Name": "3.3",
+    "Unit": "V",
+    "Scale": 1,
+    "Offset": 0,
+    "Enable": true
+  },
+  {
+    "Pin": "A3",
+    "Name": "5",
+    "Unit": "V",
+    "Scale": 1,
+    "Offset": 0,
+    "Enable": true
+  },
+  {
+    "Pin": "A4",
+    "Name": "D6",
+    "Unit": "PWM",
+    "Scale": 0.5,
+    "Offset": 0,
+    "Enable": true
+  },
+  {
+    "Pin": "A5",
+    "Name": "Nothing",
+    "Unit": "",
+    "Scale": 1,
+    "Offset": 0,
+    "Enable": true
+  }
+]

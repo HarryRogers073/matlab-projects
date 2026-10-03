@@ -1,0 +1,50 @@
+[
+  {
+    "Pin": "A0",
+    "Name": "New Sensor",
+    "Unit": "Volts",
+    "Scale": 1,
+    "Offset": 0,
+    "Enable": false
+  },
+  {
+    "Pin": "A1",
+    "Name": "New Sensor",
+    "Unit": "Volts",
+    "Scale": 1,
+    "Offset": 0,
+    "Enable": false
+  },
+  {
+    "Pin": "A2",
+    "Name": "New Sensor",
+    "Unit": "Volts",
+    "Scale": 1,
+    "Offset": 0,
+    "Enable": false
+  },
+  {
+    "Pin": "A3",
+    "Name": "New Sensor",
+    "Unit": "Volts",
+    "Scale": 1,
+    "Offset": 0,
+    "Enable": false
+  },
+  {
+    "Pin": "A4",
+    "Name": "New Sensor",
+    "Unit": "Volts",
+    "Scale": 1,
+    "Offset": 0,
+    "Enable": false
+  },
+  {
+    "Pin": "A5",
+    "Name": "New Sensor",
+    "Unit": "Volts",
+    "Scale": 1,
+    "Offset": 0,
+    "Enable": true
+  }
+]
