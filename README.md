@@ -122,8 +122,9 @@ Open `simulink/Final_Model_2025A.slx` and click **Run** to observe real-time spe
 - **Author:** Harry Rogers
 - **Degree:** BEng (Hons) Electronic & Computer Engineering (First-Class Honours)
 - **Institution:** University of Brighton
-- **Modules:** EO631 (Embedded Systems 3 - Grade: 84% / A+) & EO626 (Digital Signal Processing)
+- **Curriculum:** Digital Signal Processing & Embedded Telemetry Systems (Distinction Grade)
 - **Portfolio:** [www.harry-rogers.com](https://www.harry-rogers.com)
+- **LinkedIn:** [linkedin.com/in/harryrogers073](https://www.linkedin.com/in/harryrogers073/)
 
 ---
 
