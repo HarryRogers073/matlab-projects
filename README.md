@@ -4,12 +4,12 @@
 [![Toolboxes](https://img.shields.io/badge/Toolboxes-App%20Designer%20%7C%20DSP%20System%20%7C%20HDL%20Coder-blue?style=for-the-badge)](https://www.mathworks.com)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-> A consolidated suite of **MATLAB applications, Simulink dynamic models, and Digital Signal Processing (DSP) algorithms** engineered across BEng Electronic & Computer Engineering coursework (EO631 & EO626) at the **University of Brighton**. Spans interactive App Designer GUI instruments, microchip instruction emulation, Bilinear Transformation filter synthesis, acoustic simulation harnesses, and FPGA HDL IP code generation.
+> A consolidated suite of **MATLAB applications, Simulink dynamic models, and Digital Signal Processing (DSP) algorithms** engineered across BEng Electronic & Computer Engineering coursework at the **University of Brighton**. Spans interactive App Designer GUI instruments, microchip instruction emulation, Bilinear Transformation filter synthesis, acoustic simulation harnesses, and FPGA HDL IP code generation.
 
 ---
 
 ### 📜 Academic Integrity & Attribution Disclosure
-- **Author & Mathematical Modeling:** Authored by **Harry Rogers** across University of Brighton modules `EO626` (Digital Signal Processing) and `EO631` (Embedded Systems 3).
+- **Author & Mathematical Modeling:** Authored by **Harry Rogers** across Digital Signal Processing and Embedded Systems coursework at the University of Brighton.
 - **Toolbox & Environment IP:** Utilizes MathWorks MATLAB, Simulink, DSP System Toolbox, and HDL Coder built-in mathematical primitives (`bilinear`, `tf`, `bode`, `hamming`). MATLAB and Simulink are registered trademarks of **The MathWorks, Inc.**
 - **Instruction Set Architecture:** The PIC16F84A Instruction Explorer decodes and simulates the instruction set architecture specified in Microchip Technology document DS35007B.
 
