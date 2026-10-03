@@ -8,6 +8,13 @@
 
 ---
 
+### 📜 Academic Integrity & Attribution Disclosure
+- **Author & Mathematical Modeling:** Authored by **Harry Rogers** across University of Brighton modules `EO626` (Digital Signal Processing) and `EO631` (Embedded Systems 3).
+- **Toolbox & Environment IP:** Utilizes MathWorks MATLAB, Simulink, DSP System Toolbox, and HDL Coder built-in mathematical primitives (`bilinear`, `tf`, `bode`, `hamming`). MATLAB and Simulink are registered trademarks of **The MathWorks, Inc.**
+- **Instruction Set Architecture:** The PIC16F84A Instruction Explorer decodes and simulates the instruction set architecture specified in Microchip Technology document DS35007B.
+
+---
+
 ## 🎯 Included Engineering Projects
 
 ### 1. Interactive Telemetry & App Designer Dashboards (`app_designer/`)
