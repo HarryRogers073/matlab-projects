@@ -1,3 +1,4 @@
+% Coursework Context: University of Brighton EO626 Digital Signal Processing
 function Hd = Hamming
 %HAMMING Returns a discrete-time filter object.
 

@@ -1,3 +1,11 @@
+%===============================================================================
+% Script:       Part_h.m
+% Description:  4th-order Butterworth low-pass filter design with biquad second-order section (SOS) decomposition
+% Author:       Harry Rogers (University of Brighton)
+% Module:       EO626 - Digital Signal Processing
+% Date:         2026
+%===============================================================================
+
 % Filter Design Parameters
 Fs = 44100;      % CD Quality Sampling Rate
 Fc = 200;        % Cutoff frequency for Bass

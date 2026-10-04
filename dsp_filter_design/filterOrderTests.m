@@ -1,3 +1,11 @@
+%===============================================================================
+% Script:       filterOrderTests.m
+% Description:  Empirical filter order testing and audio playback comparison script
+% Author:       Harry Rogers (University of Brighton)
+% Module:       EO626 - Digital Signal Processing
+% Date:         2026
+%===============================================================================
+
 %% --- PART A: PRE-PROCESSING ---
 filename = 'Redbone.wav'; 
 [x, fs_original] = audioread(filename);

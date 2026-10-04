@@ -1,3 +1,11 @@
+%===============================================================================
+% Script:       fileFormatting.m
+% Description:  Audio sample pre-processing: stereo-to-mono downmix and 44.1 kHz resampling harness
+% Author:       Harry Rogers (University of Brighton)
+% Module:       EO626 - Digital Signal Processing
+% Date:         2026
+%===============================================================================
+
 %% --- PART A: PRE-PROCESSING ---
 filename = 'Redbone.wav'; 
 [x, fs_original] = audioread(filename);

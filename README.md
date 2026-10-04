@@ -4,45 +4,57 @@
 [![Toolboxes](https://img.shields.io/badge/Toolboxes-App%20Designer%20%7C%20DSP%20System%20%7C%20HDL%20Coder-blue?style=for-the-badge)](https://www.mathworks.com)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-> A consolidated suite of **MATLAB applications, Simulink dynamic models, and Digital Signal Processing (DSP) algorithms** engineered across BEng Electronic & Computer Engineering coursework at the **University of Brighton**. Spans interactive App Designer GUI instruments, microchip instruction emulation, Bilinear Transformation filter synthesis, acoustic simulation harnesses, and FPGA HDL IP code generation.
+> A collection of **MATLAB applications, Simulink simulation models, and Digital Signal Processing (DSP) filter analysis scripts** developed across BEng Electronic & Computer Engineering coursework at the **University of Brighton**. Includes interactive App Designer desktop instruments, CPU instruction emulation, audio filter response analysis, and HDL Coder export models.
 
 ---
 
-### 📜 Academic Integrity & Attribution Disclosure
-- **Author & Mathematical Modeling:** Authored by **Harry Rogers** across Digital Signal Processing and Embedded Systems coursework at the University of Brighton.
-- **Toolbox & Environment IP:** Utilizes MathWorks MATLAB, Simulink, DSP System Toolbox, and HDL Coder built-in mathematical primitives (`bilinear`, `tf`, `bode`, `hamming`). MATLAB and Simulink are registered trademarks of **The MathWorks, Inc.**
-- **Instruction Set Architecture:** The PIC16F84A Instruction Explorer decodes and simulates the instruction set architecture specified in Microchip Technology document DS35007B.
+### ◆ Academic Integrity & Attribution Disclosure
+
+| Subsystem / File | Description | Author / Provenance |
+| :--- | :--- | :--- |
+| **`HarryRogers_22835293_EO631_GUI_APP.mlapp`** | Multi-channel hardware sensor telemetry GUI with live plotting and alarms | **Harry Rogers** (Original Application) |
+| **`PIC16F84A_Instruction_Explorer.mlapp`** | CPU instruction emulator visualizing opcode decode and register state | **Harry Rogers** (Original Application) |
+| **`Combined.m` & `New_Combined.m`** | Acoustic crossover frequency response comparison between IIR and FIR filters | **Harry Rogers** (Coursework Analysis) |
+| **`partg.m`** | 16-bit Q15 fixed-point integer coefficient verification (200 Hz cutoff) | **Harry Rogers** (Coursework Analysis) |
+| **`Part_h.m`** | 4th-order Butterworth low-pass filter design with biquad SOS decomposition | **Harry Rogers** (Coursework Analysis) |
+| **`fileFormatting.m` & `filterOrderTests.m`** | Audio sample mono conversion, 44.1 kHz resampling, and listening test harness | **Harry Rogers** (Coursework Analysis) |
+| **`test_widths.m`** | Transition bandwidth parameter sweeps analyzing required filter order $N$ | **Harry Rogers** (Coursework Analysis) |
+| **`Butterworth.m` & `Hamming.m`** | Discrete-time filter objects generated via `fdesign.lowpass` and `fir1` | **MathWorks DSP System Toolbox** |
+| **`Final_Model_2025A.slx`** | Simulink model for audio crossover filtering and noise injection | **Harry Rogers** (Simulink Model) |
+| **`export_hdl_IP.m` & `hdl_IP.m`** | Synthesizable RTL export harness using MATLAB HDL Coder | **MathWorks HDL Coder Harness** |
+
+- MATLAB and Simulink are registered trademarks of **The MathWorks, Inc.**
 
 ---
 
-## 🎯 Included Engineering Projects
+## ★ Projects & Included Modules
 
 ### 1. Interactive Telemetry & App Designer Dashboards (`app_designer/`)
 - **Multi-Channel Hardware Sensor Dashboard (`HarryRogers_22835293_EO631_GUI_APP.mlapp`):**
   - Real-time plotting, scaling, offset calibration, and threshold alarms across analog inputs (`A0` - `A5`).
-  - JSON-driven hardware profiles allowing instant loading and saving of sensor calibrations (`config_schemas/`).
+  - JSON-driven hardware configuration profiles (`config_schemas/`) for saving and restoring sensor calibrations.
 - **PIC16F84A Instruction Explorer (`PIC16F84A_Instruction_Explorer.mlapp`):**
-  - Step-by-step instruction execution emulator written in MATLAB, visualizing opcode decoding, register file updates (W, STATUS, PORTA, PORTB), flag states, and instruction fetch cycles.
+  - Step-by-step CPU architecture emulator written in MATLAB, visualizing opcode decoding, register updates (W, STATUS, PORTA, PORTB), and ALU flag states.
 
 ### 2. DSP Filter Design & Audio Processing (`dsp_filter_design/`)
-- **IIR Filter Synthesis via Bilinear Transformation (`Butterworth.m`):**
-  - Synthesizes Butterworth low-pass, high-pass, and band-pass filters from continuous-time analog prototypes ($s$-domain) mapped into discrete $z$-domain transfer functions with frequency pre-warping.
-- **FIR Linear-Phase Windowing (`Hamming.m`):**
-  - Designs linear-phase FIR filters using windowed sinc truncation and Kaiser/Hamming tapering.
-  - Analyzes trade-offs between filter order $N$, transition bandwidth, and stopband ripple.
+- **Acoustic Loudspeaker Crossover (`Combined.m`, `New_Combined.m`):**
+  - Compares woofer, tweeter, and combined frequency responses between IIR Butterworth and FIR Hamming windowed filters.
+- **Fixed-Point Quantization (`partg.m`, `Part_h.m`):**
+  - Verifies exact integer Q15 arithmetic and biquad second-order section (SOS) decomposition for embedded hardware implementations.
+- **Audio Sample Pre-Processing (`fileFormatting.m`, `filterOrderTests.m`):**
+  - Downmixes audio files to mono, resamples to 44.1 kHz standard, and verifies attenuation across audio test tracks (`audio_samples/`).
 
-### 3. Simulink Dynamic Acoustic Harness (`simulink/`)
+### 3. Simulink Audio Simulation (`simulink/`)
 - **`Final_Model_2025A.slx`:**
-  - Real-time time-domain and spectral comparison between raw audio input, simulated acoustic interference, and filtered outputs.
-  - Discrete fixed-point quantization analysis and overflow risk mitigation.
+  - Real-time time-domain and spectral comparison between raw audio input, simulated acoustic noise, and filtered output channels.
 
-### 4. Synthesizable HDL IP Export (`hdl_export/`)
-- **Automated HDL Coder Pipeline (`export_hdl_IP.m`):**
-  - Generates synthesizable Verilog/VHDL RTL filter cores from MATLAB transfer functions, with automated behavioral testbench verification (`export_hdl_IP_tb.m`).
+### 4. Synthesizable HDL Export (`hdl_export/`)
+- **`export_hdl_IP.m` & `export_hdl_IP_tb.m`:**
+  - Uses MATLAB HDL Coder to generate synthesizable Verilog/VHDL RTL filter cores from transfer function objects with automated testbench verification.
 
 ---
 
-## 📊 Processing Pipeline
+## ◆ Processing Pipeline
 
 ```mermaid
 flowchart TD
@@ -51,82 +63,86 @@ flowchart TD
         SIM["PIC16F84A Instruction Explorer\n(Opcode Decoding & Registers)"]
     end
 
-    subgraph DSP ["DSP & Filter Synthesis Engine"]
-        IIR["Bilinear Transform Butterworth Synthesis\n(s-domain -> z-domain)"]
-        FIR["Hamming Window FIR Generator\n(Linear-Phase Sinc Tapering)"]
+    subgraph DSP ["DSP Analysis & Filter Synthesis"]
+        IIR["Butterworth IIR Filter\n(Biquad SOS & Q15 Fixed-Point)"]
+        FIR["Hamming Window FIR Filter\n(Linear-Phase Sinc Tapering)"]
+        COMP["Acoustic Crossover Comparison\n(Woofer, Tweeter, Combined)"]
     end
 
     subgraph Hardware ["Simulink & Hardware Export"]
-        SLX["Simulink Dynamic Acoustic Harness\n(Fixed-Point Audio Verification)"]
-        HDL["HDL Coder Synthesis Engine\n(Synthesizable Verilog / VHDL IP)"]
+        SLX["Simulink Acoustic Model\n(Time/Frequency Verification)"]
+        HDL["HDL Coder Pipeline\n(Synthesizable RTL Filter Core)"]
     end
 
-    UI --> DSP
-    DSP --> SLX
-    DSP --> HDL
+    DASH --> DSP
+    SIM --> DSP
+    IIR --> COMP
+    FIR --> COMP
+    COMP --> SLX
+    COMP --> HDL
 ```
 
 ---
 
-## 📂 Repository Contents
+## ◆ Repository Structure
 
-```
+```text
 matlab-projects/
-├── app_designer/                              # Interactive MATLAB App Designer GUIs
-│   ├── HarryRogers_22835293_EO631_GUI_APP.mlapp # Multi-sensor telemetry & control dashboard
-│   ├── PIC16F84A_Instruction_Explorer.mlapp   # Interactive PIC16 opcode execution explorer
-│   ├── FinalApp.mlapp                         # Baseline sensor monitor
-│   └── config_schemas/                        # JSON calibration profiles (Test.json, Example.json)
-├── dsp_filter_design/                         # Classical and modern filter algorithms
-│   ├── Butterworth.m                          # Butterworth IIR filter synthesis
-│   ├── Hamming.m                              # Hamming window FIR filter generator
-│   ├── Combined.m                             # Comparative filter analysis
-│   └── *.fcf                                  # Filter coefficient configuration files
-├── simulink/                                  # Simulink simulation models
-│   └── Final_Model_2025A.slx                  # Dynamic audio streaming & filtering model
-├── hdl_export/                                # FPGA HDL Coder scripts
-│   ├── export_hdl_IP.m                        # Automated HDL Coder export pipeline
-│   ├── export_hdl_IP_tb.m                     # HDL testbench generation script
-│   └── hdl_IP.m                               # Filter behavioral function definition
-└── audio_samples/                             # Acoustic verification benchmarks
-    ├── jazz_song.wav                          # Raw audio input
-    ├── Filtered_jazz_song.wav                 # Filtered audio output
-    └── march_song.wav                         # Transient benchmark audio
+├── app_designer/                   # Interactive MATLAB GUIs (Harry Rogers)
+│   ├── HarryRogers_22835293_EO631_GUI_APP.mlapp # Sensor dashboard
+│   ├── PIC16F84A_Instruction_Explorer.mlapp    # CPU emulator
+│   └── config_schemas/             # JSON sensor configuration files
+├── dsp_filter_design/              # DSP Analysis & Filter Scripts
+│   ├── Combined.m                  # Crossover frequency response analysis (Harry Rogers)
+│   ├── New_Combined.m              # Coursework report visualization (Harry Rogers)
+│   ├── partg.m                     # Q15 fixed-point coefficient verification (Harry Rogers)
+│   ├── Part_h.m                    # Butterworth biquad decomposition (Harry Rogers)
+│   ├── fileFormatting.m            # Audio resampling & mono downmix (Harry Rogers)
+│   ├── filterOrderTests.m          # Filter order sweep testing (Harry Rogers)
+│   ├── test_widths.m               # Transition width parameter sweeps (Harry Rogers)
+│   ├── Butterworth.m               # Filter object (Generated via MATLAB DSP Toolbox)
+│   └── Hamming.m                   # Filter object (Generated via MATLAB DSP Toolbox)
+├── simulink/                       # Dynamic simulation models
+│   └── Final_Model_2025A.slx       # Audio crossover simulation model (Harry Rogers)
+├── hdl_export/                     # Synthesizable RTL export scripts
+│   ├── export_hdl_IP.m             # HDL Coder export runner
+│   └── export_hdl_IP_tb.m          # Automated HDL testbench
+└── audio_samples/                  # Evaluation audio tracks (.wav)
 ```
 
 ---
 
-## 🛠️ Usage Instructions
+## → Getting Started
 
-### Launching App Designer Tools
-In the MATLAB Command Window:
-```matlab
-app = HarryRogers_22835293_EO631_GUI_APP;
-```
-To run the PIC instruction emulator:
-```matlab
-app = PIC16F84A_Instruction_Explorer;
-```
-
-### Running Filter Synthesis & Simulink
-```matlab
-cd dsp_filter_design
-Butterworth
-```
-Open `simulink/Final_Model_2025A.slx` and click **Run** to observe real-time spectrum analyzer traces.
+1. Open **MATLAB** (R2022b or later).
+2. To run the Sensor Telemetry Dashboard:
+   ```matlab
+   cd app_designer
+   app = HarryRogers_22835293_EO631_GUI_APP;
+   ```
+3. To run the PIC16F84A Instruction Explorer:
+   ```matlab
+   cd app_designer
+   app = PIC16F84A_Instruction_Explorer;
+   ```
+4. To run the audio crossover comparison:
+   ```matlab
+   cd dsp_filter_design
+   New_Combined
+   ```
 
 ---
 
-## 🎓 Academic Attribution
+## ★ Academic Information & Author
 
 - **Author:** Harry Rogers
 - **Degree:** BEng (Hons) Electronic & Computer Engineering (First-Class Honours)
 - **Institution:** University of Brighton
-- **Curriculum:** Digital Signal Processing & Embedded Telemetry Systems (Distinction Grade)
-- **Portfolio:** [www.harry-rogers.com](https://www.harry-rogers.com)
+- **Modules:** Digital Signal Processing (EO626) & Embedded Systems (EO631)
+- **Website:** [www.harry-rogers.com](https://www.harry-rogers.com)
 - **LinkedIn:** [linkedin.com/in/harryrogers073](https://www.linkedin.com/in/harryrogers073/)
 
 ---
 
-## 📄 License
+## ◆ License
 This repository is licensed under the MIT License - see [LICENSE](LICENSE) for details.

@@ -1,3 +1,11 @@
+%===============================================================================
+% Script:       test_widths.m
+% Description:  Transition bandwidth parameter sweep script analyzing required FIR filter orders
+% Author:       Harry Rogers (University of Brighton)
+% Module:       EO626 - Digital Signal Processing
+% Date:         2026
+%===============================================================================
+
 Fs = 44100;
 fc = 1800;
 test_width = 50:50:1800; % Test different widths from 50 to 1800 Hz in increments of 50

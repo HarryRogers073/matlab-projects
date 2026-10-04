@@ -1,3 +1,11 @@
+%===============================================================================
+% Script:       Combined.m
+% Description:  High-visibility frequency response analysis comparing Butterworth (IIR) and Hamming (FIR) filters
+% Author:       Harry Rogers (University of Brighton)
+% Module:       EO626 - Digital Signal Processing
+% Date:         2026
+%===============================================================================
+
 % EO626: High-Visibility Analysis of Individual and Combined Spectra
 % Integrates Butterworth (IIR) and Hamming (FIR) with thick, clear lines
 
