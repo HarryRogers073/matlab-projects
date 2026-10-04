@@ -138,7 +138,7 @@ matlab-projects/
 - **Author:** Harry Rogers
 - **Degree:** BEng (Hons) Electronic & Computer Engineering (First Class 80%)
 - **Institution:** University of Brighton
-- **Modules:** Digital Signal Processing (EO626, 68% Merit) & Embedded Systems (EO631, First Class 84%)
+- **Modules:** Digital Signal Processing (EO626, Upper Second Class 68%) & Embedded Systems (EO631, First Class 84%)
 - **Website:** [www.harry-rogers.com](https://www.harry-rogers.com)
 - **LinkedIn:** [linkedin.com/in/harryrogers073](https://www.linkedin.com/in/harryrogers073/)
 
