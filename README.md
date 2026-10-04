@@ -8,7 +8,7 @@
 
 ---
 
-### ◆ Academic Integrity & Attribution Disclosure
+### Academic Integrity & Attribution Disclosure
 
 | Subsystem / File | Description | Author / Provenance |
 | :--- | :--- | :--- |
@@ -27,7 +27,7 @@
 
 ---
 
-## ★ Projects & Included Modules
+## Projects & Included Modules
 
 ### 1. Interactive Telemetry & App Designer Dashboards (`app_designer/`)
 - **Multi-Channel Hardware Sensor Dashboard (`HarryRogers_22835293_EO631_GUI_APP.mlapp`):**
@@ -54,7 +54,7 @@
 
 ---
 
-## ◆ Processing Pipeline
+## Processing Pipeline
 
 ```mermaid
 flowchart TD
@@ -84,7 +84,7 @@ flowchart TD
 
 ---
 
-## ◆ Repository Structure
+## Repository Structure
 
 ```text
 matlab-projects/
@@ -112,7 +112,7 @@ matlab-projects/
 
 ---
 
-## → Getting Started
+## Getting Started
 
 1. Open **MATLAB** (R2022b or later).
 2. To run the Sensor Telemetry Dashboard:
@@ -133,7 +133,7 @@ matlab-projects/
 
 ---
 
-## ★ Academic Information & Author
+## Academic Information & Author
 
 - **Author:** Harry Rogers
 - **Degree:** BEng (Hons) Electronic & Computer Engineering (First-Class Honours)
@@ -144,5 +144,5 @@ matlab-projects/
 
 ---
 
-## ◆ License
+## License
 This repository is licensed under the MIT License - see [LICENSE](LICENSE) for details.
