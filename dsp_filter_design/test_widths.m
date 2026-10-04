@@ -1,9 +1,8 @@
 %===============================================================================
-% Script:       test_widths.m
+% File:         test_widths.m
+% Written by:   Harry Rogers
+% Date:         January 2026
 % Description:  Transition bandwidth parameter sweep script analyzing required FIR filter orders
-% Author:       Harry Rogers (University of Brighton)
-% Module:       EO626 - Digital Signal Processing
-% Date:         2026
 %===============================================================================
 
 Fs = 44100;

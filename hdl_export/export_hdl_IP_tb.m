@@ -1,5 +1,10 @@
-%Testbench generated using HDL IP Designer
-% generate input stimulus for DUT
+%===============================================================================
+% File:         export_hdl_IP_tb.m
+% Written by:   Generated via MATLAB HDL Coder (Harness by Harry Rogers)
+% Date:         January 2026
+% Description:  Automated testbench for verifying exported synthesizable HDL filter core
+%===============================================================================
+
 numSamples = 200;
 x = randn(numSamples,1);
 testbench.data = fi(x,1,16,15);

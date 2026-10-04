@@ -1,14 +1,9 @@
 %===============================================================================
-% Script:       New_Combined.m
-% Description:  Final coursework report 4-subplot visualization script for woofer, tweeter, and combined loudspeaker responses
-% Author:       Harry Rogers (University of Brighton)
-% Module:       EO626 - Digital Signal Processing
-% Date:         2026
+% File:         New_Combined.m
+% Written by:   Harry Rogers
+% Date:         January 2026
+% Description:  Coursework report 4-subplot visualization script for acoustic loudspeaker responses
 %===============================================================================
-
-%% EO626: Final Report Visualisation Script
-% 4 Figures, each containing 4 subplots: Individual, Combined, and Comparison.
-% Colours: Woofer=Red, Tweeter=Green, Combined=Orange.
 
 clear; clc; close all;
 

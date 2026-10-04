@@ -1,13 +1,10 @@
 %===============================================================================
-% Script:       partg.m
-% Description:  1st-order 16-bit Q15 fixed-point IIR filter verification using exact integer coefficients (200 Hz cutoff)
-% Author:       Harry Rogers (University of Brighton)
-% Module:       EO626 - Digital Signal Processing
-% Date:         2026
+% File:         partg.m
+% Written by:   Harry Rogers
+% Date:         January 2026
+% Description:  1st-order 16-bit Q15 fixed-point integer coefficient verification (200 Hz cutoff)
 %===============================================================================
 
-% Filter Verification: 1st-Order 16-bit IIR (200Hz Cutoff)
-% Using exact integer coefficients for Q15 hardware implementation
 fs = 44100; % Sampling Frequency
 fc = 200;   % Cutoff Frequency
 

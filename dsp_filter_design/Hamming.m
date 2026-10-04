@@ -1,4 +1,10 @@
-% Coursework Context: University of Brighton EO626 Digital Signal Processing
+%===============================================================================
+% File:         Hamming.m
+% Written by:   Generated via MATLAB DSP Toolbox (Configured by Harry Rogers)
+% Date:         January 2026
+% Description:  Discrete-time Hamming windowed FIR low-pass filter object definition
+%===============================================================================
+
 function Hd = Hamming
 %HAMMING Returns a discrete-time filter object.
 

@@ -1,5 +1,10 @@
-%Testbench generated using HDL IP Designer
-% generate input stimulus for DUT
+%===============================================================================
+% File:         hdl_IP_tb.m
+% Written by:   Generated via MATLAB HDL Coder (Harness by Harry Rogers)
+% Date:         January 2026
+% Description:  Simulation stimulus testbench for HDL Coder synthesizable module
+%===============================================================================
+
 numSamples = 200;
 
 

@@ -1,4 +1,10 @@
-% Coursework Context: University of Brighton EO626 Digital Signal Processing
+%===============================================================================
+% File:         Butterworth.m
+% Written by:   Generated via MATLAB DSP Toolbox (Configured by Harry Rogers)
+% Date:         January 2026
+% Description:  Discrete-time Butterworth IIR low-pass filter object definition
+%===============================================================================
+
 function Hd = Butterworth
 %BUTTERWORTH Returns a discrete-time filter object.
 
